@@ -26,7 +26,7 @@ class ORMOrderByManager extends AbstractPluginManager
 
             $orderByHandler = $this->get(strtolower($option['type']), array($this));
 
-            $orderByHandler->orderBy($queryBuilder, $metadata, $option);
+            $orderByHandler->oddOrderBy($queryBuilder, $metadata, $option);
         }
     }
 
